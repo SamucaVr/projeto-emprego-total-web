@@ -72,11 +72,86 @@ nav li a:hover {
     background-color: #fff;
     color: #3572EF;
 }
+/* Fim cabeçalho */
+
+main {
+    width: 55%;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: left;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.curriculo-card {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+form fieldset {
+    border: 1px solid #969292;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+form legend {
+    font-weight: bold;
+    color: #615EFC;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="url"],
+form input[type="email"],
+form input[type="number"],
+form input[type="date"],
+form select,
+form textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    background-color: #3572EF;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.2s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #1d51bb;
+}
 
 footer {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
     background-color: #333;
     color: #fff;
     text-align: center;
