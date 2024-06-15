@@ -179,11 +179,6 @@ nav a:hover {
 }
 /* Fim cabeçalho */
 
-
-#container {
-    margin: 0 auto;
-}
-
 #img-anuncio {
     display: flex;
     flex-direction: column;
