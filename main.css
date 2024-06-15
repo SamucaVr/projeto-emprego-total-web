@@ -100,15 +100,12 @@ nav li a:hover {
     color: #ff9bb6;
 }
 
-#btn-area {
-    position: relative;
-}
-
 .botao-menu {
+    border: none;
     cursor: pointer;
-    padding: 10px;
     color: white;
-    width: 85px;
+    padding: 10px;
+    width: 110px;
     background: url(/imagens/material-symbols-light--menu.png) no-repeat center right;
     background-size: 30px;
 }
@@ -195,7 +192,7 @@ nav li a:hover {
     margin-top: 20px;
 }
 
-button {
+.job-actions button {
     background-color: #007bff;
     color: #fff;
     padding: 8px 16px;
