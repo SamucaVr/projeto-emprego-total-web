@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Adicionar Oferta de Emprego</title>
+    <link rel="icon" href="../imagens/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/cad-emprego.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="logo">
+            <a href="../index.html">
+                <img src="/imagens/logo.png">
+            </a>
+            <div>
+                <h1>Emprego <span class="cinza">Total</span></h1>
+                <h4>O seu portal de oportunidades</h4>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Buscar Empregos</a></li>
+                <li><a href="./cad-curriculo.html">Cadastrar CV</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="container">
+            <div class="job-card">
+                <h1>Adicionar Oferta de Emprego</h1>
+                <form action="adicionar_vaga.php" method="POST" id="jobForm">
+                    <fieldset>
+                        <legend>Informações da Vaga</legend>
+
+                        <label for="titulo">Título da Vaga:</label>
+                        <input type="text" id="titulo" name="titulo" required>
+
+                        <label for="descricao">Descrição da Vaga:</label>
+                        <textarea id="descricao" name="descricao" rows="5" cols="50" required></textarea>
+
+                        <label for="habilidades">Habilidades e Competências:</label>
+                        <textarea id="habilidades" name="habilidades" rows="3" cols="50" required></textarea>
+
+                        <label for="formacao">Formação Acadêmica:</label>
+                        <input type="text" id="formacao" name="formacao" required>
+
+                        <label for="localizacao">Localização:</label>
+                        <input type="text" id="localizacao" name="localizacao" required>
+
+                        <label for="modalidade">Modalidade de Trabalho:</label>
+                        <select id="modalidade" name="modalidade" required>
+                            <option value="presencial">Presencial</option>
+                            <option value="remoto">Remoto</option>
+                            <option value="hibrido">Híbrido</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Informações da Empresa</legend>
+
+                        <label for="nome_empresa">Nome da Empresa:</label>
+                        <input type="text" id="nome_empresa" name="nome_empresa" required>
+
+                        <label for="setor">Setor de Atuação:</label>
+                        <input type="text" id="setor" name="setor" required>
+
+                        <label for="descricao_empresa">Descrição da Empresa:</label>
+                        <textarea id="descricao_empresa" name="descricao_empresa" rows="3" cols="50"
+                            required></textarea>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Detalhes do Contrato</legend>
+
+                        <label for="tipo_contrato">Tipo de Contrato:</label>
+                        <select id="tipo_contrato" name="tipo_contrato" required>
+                            <option value="clt">CLT</option>
+                            <option value="pj">PJ</option>
+                            <option value="estagio">Estágio</option>
+                            <option value="temporario">Temporário</option>
+                        </select>
+
+                        <label for="horario">Horário de Trabalho:</label>
+                        <input type="text" id="horario" name="horario" required>
+                    </fieldset>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2024, Emprego Total; Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

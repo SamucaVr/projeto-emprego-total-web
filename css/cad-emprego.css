@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #ccc;
+    text-align: center;
+}
+
+/* Inicio cabeçalho */
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #3572EF;
+    color: #fff;
+    padding: 8px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header h1 {
+    margin: 0;
+}
+
+#logo {
+    display: flex;
+}
+
+#logo img {
+    width: 75px;
+    height: 60px;
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+#logo > div {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.cinza {
+    color: #2d2d2d;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+nav li a {
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+}
+
+nav li a:hover {
+    background-color: #fff;
+    color: #3572EF;
+}
+/* Fim cabeçalho */
+
+#container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.job-card {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+form fieldset {
+    border: 1px solid #969292;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+form legend {
+    font-weight: bold;
+    color: #615EFC;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="url"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="date"],
+form select,
+form textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+form select {
+    text-align: center;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form input[type="submit"] {
+    background-color: #3572EF;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+form input[type="submit"]:hover {
+    background-color: #1ba2e1;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
