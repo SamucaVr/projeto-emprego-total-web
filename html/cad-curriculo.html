@@ -29,6 +29,65 @@
         </nav>
     </header>
 
+    <main>
+        <div class="curriculo-card">
+            <h1>Adicionar Currículo</h1>
+            <form action="submit_curriculo.php" method="post">
+                <fieldset>
+                    <legend>Informações Pessoais</legend>
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="number" id="telefone" name="telefone" required>
+
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Objetivo</legend>
+                    <label for="objetivo">Objetivo Profissional:</label>
+                    <textarea id="objetivo" name="objetivo" rows="4" required></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Formação</legend>
+                    <label for="formacao">Formação Acadêmica:</label>
+                    <textarea id="formacao" name="formacao" rows="4" required></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Experiência</legend>
+                    <label for="experiencia">Experiência Profissional:</label>
+                    <textarea id="experiencia" name="experiencia" rows="4" required></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Habilidades</legend>
+                    <label for="habilidades">Habilidades e Competências:</label>
+                    <textarea id="habilidades" name="habilidades" rows="4" required></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Idiomas</legend>
+                    <label for="idiomas">Idiomas:</label>
+                    <textarea id="idiomas" name="idiomas" rows="2" required></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Referências</legend>
+                    <label for="referencias">Referências:</label>
+                    <textarea id="referencias" name="referencias" rows="4"></textarea>
+                </fieldset>
+                <input type="submit" value="Enviar currículo">
+            </form>
+        </div>
+    </main>
+
     <footer>
         <p>Copyright &copy; 2024, Emprego Total; Todos os direitos reservados.</p>
     </footer>
