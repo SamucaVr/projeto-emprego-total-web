@@ -13,7 +13,7 @@ body {
 /* Inicio cabecalho */
 header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     background-color: #3572EF;
     color: #fff;
@@ -34,8 +34,8 @@ header h1 {
 }
 
 #logo img {
-    width: 75px;
-    height: 60px;
+    width: 55px;
+    height: 50px;
 }
 
 h1, h4 {
@@ -189,6 +189,12 @@ nav a:hover {
     position: relative;
     background: url(/imagens/jpeg-optimizer_business-people-hand-shake.jpg);
     background-size: cover;
+}
+
+#img-anuncio::before {
+    content: "";
+    background-image: url(/imagens/jpeg-optimizer_business-people-hand-shake.jpg);
+    position: absolute;
 }
 
 .filter {
