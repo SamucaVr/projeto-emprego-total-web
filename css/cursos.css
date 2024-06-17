@@ -1,3 +1,5 @@
+@import url('cursos iframe.css');
+
 * {
     margin: 0;
     padding: 0;
@@ -34,8 +36,8 @@ header h1 {
 }
 
 #logo img {
-    width: 75px;
-    height: 60px;
+    width: 55px;
+    height: 50px;
 }
 
 h1, h4 {
@@ -53,6 +55,10 @@ h1, h4 {
     color: #2d2d2d;
 }
 
+ul {
+    list-style: none;
+}
+
 nav {
     width: 40%;
     display: flex;
@@ -63,13 +69,11 @@ nav {
 nav ul {
     display: flex;
     gap: 20px;
-    list-style-type: none;
 }
 
 nav li a {
-    text-decoration: none;
-    padding: 6px 15px;
     color: #fff;
+    padding: 6px 15px;
     font-size: 0.9em;
     font-weight: 400;
 }
@@ -98,12 +102,40 @@ nav li a:hover {
     color: #ff9bb6;
 }
 
+#btn-area {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.area-pesquisa input {
+    width: 480px;
+    padding: 0.5em 2.7em;
+    line-height: 1.3em;
+    font-size: 1em;
+    background: #fff url(/imagens/ph--magnifying-glass.png) no-repeat left;
+    background-size: 25px;
+    background-position: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.area-pesquisa button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
 .botao-menu {
     border: none;
     cursor: pointer;
     color: white;
+    text-align: left;
     padding: 10px;
-    width: 110px;
+    width: 75px;
     background: url(/imagens/material-symbols-light--menu.png) no-repeat center right;
     background-size: 30px;
 }
@@ -115,14 +147,13 @@ nav li a:hover {
     border-radius: 5px;
     padding: 15px;
     position: absolute;
+    top: 100%;
     right: 0;
     margin-top: 5px;
-    margin-right: 10px;
     box-shadow: 0 0 8px #000;
 }
 
 .menu ul {
-    list-style-type: none;
     display: block;
     position: relative;
     left: 5px;
@@ -132,8 +163,16 @@ nav li a:hover {
     margin: 0.5rem 0;
 }
 
-.menu li a {
+.menu li a{
     text-align: center;
     display: block;
     width: 160px;
+}
+/* Fim cabeçalho */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
 }
