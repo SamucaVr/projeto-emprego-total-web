@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emprego Total - O seu portal de oportunidades</title>
-    <link rel="icon" href="../imagens/logo.png" type="image/x-icon">
+    <link rel="icon" href="imagens/logo-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="main.css">
 </head>
 
@@ -22,26 +22,53 @@
             </div>
         </div>
         <nav>
-            <div>
+            <div id="area-menu">
                 <ul>
                     <li><a href="/html/anuncio-empresa.html" class="anuncio">Anunciar vaga</a></li>
                     <li><a href="/html/cad-curriculo.html" class="cadastro-cv">Cadastrar CV</a></li>
-                    <li><a href="/html/login-page.html">Entrar</a></li>
+                    <li id="login-button"><a href="/html/login-page.html">Entrar</a></li>
                 </ul>
             </div>
+
             <div id="btn-area">
-                <button onclick="mostrarMenu()" class="botao-menu">Menu</button>
-                <div class="menu" id="menu">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#">Buscar Empregos</a></li>
-                        <li><a href="/html/cursos.html">Cursos</a></li>
-                        <li><a href="#">Currículo</a></li>
-                        <li><a href="#">Sobre Nós</a></li>
-                    </ul>
+                <div class="area-pesquisa">
+                    <form action="#">
+                        <input type="search" placeholder="Buscar por profissional">
+                    </form>
                 </div>
+                <div>
+                    <button onclick="mostrarMenu()" class="botao-menu">Menu</button>
+                    <div class="menu" id="menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">Buscar Empregos</a></li>
+                            <li><a href="/html/anuncio-empresa.html">Anunciar vaga</a></li>
+                            <li><a href="/html/cad-curriculo.html">Cadastrar CV</a></li>
+                            <li><a href="/html/cursos.html">Cursos</a></li>
+                            <li><a href="#">Currículo</a></li>
+                            <li><a href="#">Sobre Nós</a></li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </nav>
+
+        <div id="usuarioLogado">
+            <div>
+                <h5>Área do Usuário:</h5>
+                <span id="emailLogado"></span>
+            </div>
+            <button onclick="mostrarMenuUsuario()" class="botao-menu-usuario">Perfil</button>
+            <div class="menu-usuario" id="menu-usuario">
+                <ul>
+                    <li><a href="#">Dados pessoais</a></li>
+                    <li><a href="#">Cancelar assinatura</a></li>
+                    <li><a href="#">Cadastro e assinatura</a></li>
+                    <li><a href="#" id="sair">Sair</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -82,47 +109,16 @@
                 <option value="Acima de R$ 2.000">Acima de R$ 2.000</option>
             </select>
         </div>
-
-        <div class="job-list">
-            <div class="job-card">
-                <a href="#">OFICIAL DE REDE - ILHÉUS/BA</a>
-                <p class="job-company">SEREDE</p>
-                <p class="job-details">A Combinar</p>
-                <p class="job-details">2 vagas: Ilheus - BA (2)</p>
-                <p class="job-details">Publicada hoje</p>
-                <p class="job-details">Se você sempre sonhou em trabalhar em uma das empresas que mais emprega no
-                    Brasil, que está em constante transformação e investe em projetos de inovação, essa é sua
-                    chance! Nosso...</p>
-                <div class="job-actions">
-                    <a href="#" class="button" aria-label="Cadastre-se grátis e veja a vaga completa">Cadastre-se grátis
-                        e veja a vaga completa</a>
-                    <button>Quero me candidatar</button>
-                </div>
-            </div>
-
-            <div class="job-card">
-                <a href="#">Executivo de Vendas - Ilhéus (BA)</a>
-                <p class="job-company">SUMUP</p>
-                <p class="job-details">A Combinar</p>
-                <p class="job-details">1 vaga: Ilheus - BA (1)</p>
-                <p class="job-details">Publicada hoje</p>
-                <p class="job-details">Venha fazer parte da SUMUP, a maior plataforma de pagamentos da América
-                    Latina. Nossa missão é revolucionar a forma como as pessoas e empresas recebem pagamentos,
-                    oferecendo soluções simples e inovadoras. </p>
-                <div class="job-actions">
-                    <a href="#" class="button" aria-label="Cadastre-se grátis e veja a vaga completa">Cadastre-se grátis
-                        e veja a vaga completa</a>
-                    <button>Quero me candidatar</button>
-                </div>
-            </div>
-        </div>
+        <div id="jobs-container"></div>
+        <div id="pagination-container" class="pagination"></div>
     </main>
 
     <footer>
         <p>Copyright &copy; 2024, Emprego Total; Todos os direitos reservados.</p>
     </footer>
 
-    <script src="/js/script.js"></script>
+    <script src="./js/script.js"></script>
+    <script type="module" src="/js/module.js"></script>
 </body>
 
 </html>
