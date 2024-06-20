@@ -14,9 +14,10 @@ const vagas =
             ],
             "salary": "R$ 6.000,00",
             "contact_email": "recrutamento@techsolutions.com",
-            "job_area": "technology",
-            "job_model": "CLT",
-            "publication_date": "2024-06-01",
+            "job_area": "tecnologia",
+            "job_model": "presencial",
+            "publication_date": "2024-06-11T14:23:45Z",
+            "contract":"pj",
             "pcd": false
         },
         {
@@ -32,9 +33,10 @@ const vagas =
             ],
             "salary": "R$ 4.500,00",
             "contact_email": "vagas@marketingexperts.com",
-            "job_area": "technology",
-            "job_model": "CLT",
-            "publication_date": "2024-06-02",
+            "job_area": "tecnologia",
+            "job_model": "presencial",
+            "publication_date": "2024-06-11T14:23:45Z",
+            "contract":"pj",
             "pcd": false
         },
         {
@@ -50,9 +52,10 @@ const vagas =
             ],
             "salary": "R$ 8.000,00",
             "contact_email": "rh@inovatech.com",
-            "job_area": "technology",
-            "job_model": "CLT",
-            "publication_date": "2024-06-03",
+            "job_area": "tecnologia",
+            "job_model": "presencial",
+            "publication_date": "2024-05-18T09:15:30Z",
+            "contract":"pj",
             "pcd": false
         },
         {
@@ -68,9 +71,10 @@ const vagas =
             ],
             "salary": "R$ 3.500,00",
             "contact_email": "talentos@creativeagency.com",
-            "job_area": "technology",
-            "job_model": "PJ",
-            "publication_date": "2024-06-04",
+            "job_area": "tecnologia",
+            "job_model": "remoto",
+            "publication_date": "2024-05-18T09:15:30Z",
+            "contract":"clt",
             "pcd": false
         },
         {
@@ -86,9 +90,10 @@ const vagas =
             ],
             "salary": "R$ 7.000,00",
             "contact_email": "jobs@websolutions.com",
-            "job_area": "technology",
-            "job_model": "CLT",
+            "job_area": "tecnologia",
+            "job_model": "remoto",
             "publication_date": "2024-06-05",
+            "contract":"clt",
             "pcd": false
         },
         {
@@ -104,9 +109,10 @@ const vagas =
             ],
             "salary": "R$ 2.500,00",
             "contact_email": "consultoria@comercialbahia.com",
-            "job_area": "technology",
-            "job_model": "CLT",
+            "job_area": "tecnologia",
+            "job_model": "remoto",
             "publication_date": "2024-06-06",
+            "contract":"clt",
             "pcd": true
         },
         {
@@ -122,9 +128,10 @@ const vagas =
             ],
             "salary": "R$ 3.200,00",
             "contact_email": "vagas@techsupport.com",
-            "job_area": "technology",
-            "job_model": "CLT",
+            "job_area": "tecnologia",
+            "job_model": "hibrido",
             "publication_date": "2024-06-07",
+            "contract":"estagio",
             "pcd": false
         },
         {
@@ -140,9 +147,10 @@ const vagas =
             ],
             "salary": "R$ 9.000,00",
             "contact_email": "engenharia@construtorabahia.com",
-            "job_area": "technology",
-            "job_model": "CLT",
+            "job_area": "tecnologia",
+            "job_model": "hibrido",
             "publication_date": "2024-06-08",
+            "contract":"estagio",
             "pcd": false
         },
         {
@@ -158,9 +166,10 @@ const vagas =
             ],
             "salary": "R$ 2.000,00",
             "contact_email": "rh@empresaxyz.com",
-            "job_area": "technology",
-            "job_model": "CLT",
+            "job_area": "tecnologia",
+            "job_model": "remoto",
             "publication_date": "2024-06-09",
+            "contract":"estagio",
             "pcd": true
         },
         {
@@ -176,9 +185,10 @@ const vagas =
             ],
             "salary": "R$ 4.000,00",
             "contact_email": "recrutamento@rhsolutions.com",
-            "job_area": "technology",
-            "job_model": "CLT",
+            "job_area": "tecnologia",
+            "job_model": "remoto",
             "publication_date": "2024-06-10",
+            "contract":"estagio",
             "pcd": false
         },
         {
@@ -194,9 +204,10 @@ const vagas =
             ],
             "salary": "R$ 7.500,00",
             "contact_email": "jobs@appinnovators.com",
-            "job_area": "technology",
-            "job_model": "CLT",
+            "job_area": "tecnologia",
+            "job_model": "presencial",
             "publication_date": "2024-06-11",
+            "contract":"clt",
             "pcd": false
         },
         {
@@ -213,8 +224,9 @@ const vagas =
             "salary": "R$ 5.000,00",
             "contact_email": "rh@hospitalvida.com",
             "job_area": "saude",
-            "job_model": "CLT",
+            "job_model": "hibrido",
             "publication_date": "2024-06-12",
+            "contract":"pj",
             "pcd": false
         },
         {
@@ -231,12 +243,13 @@ const vagas =
             "salary": "R$ 3.000,00",
             "contact_email": "contato@escoladeidiomasabc.com",
             "job_area": "educacao",
-            "job_model": "CLT",
+            "job_model": "presencial",
             "publication_date": "2024-06-13",
+            "contract":"estagio",
             "pcd": false
         },
         {
-            id: 14,
+            "id": 14,
             "title": "Técnico em Informática",
             "company": "InfoTech",
             "location": "Simões Filho, BA",
@@ -248,9 +261,10 @@ const vagas =
             ],
             "salary": "R$ 2.800,00",
             "contact_email": "vagas@infotech.com",
-            "job_area": "technology",
-            "job_model": "CLT",
+            "job_area": "tecnologia",
+            "job_model": "remoto",
             "publication_date": "2024-06-14",
+            "contract":"estagio",
             "pcd": false
         },
         {
@@ -266,9 +280,10 @@ const vagas =
             ],
             "salary": "R$ 4.500,00",
             "contact_email": "rh@comercialxyz.com",
-            "job_area": "technology",
-            "job_model": "CLT",
+            "job_area": "tecnologia",
+            "job_model": "presencial",
             "publication_date": "2024-06-15",
+            "contract":"estagio",
             "pcd": false
         },
         {
@@ -284,9 +299,10 @@ const vagas =
             ],
             "salary": "R$ 5.500,00",
             "contact_email": "financas@financeiraabc.com",
-            "job_area": "technology",
-            "job_model": "CLT",
+            "job_area": "tecnologia",
+            "job_model": "hibrido",
             "publication_date": "2024-06-16",
+            "contract":"pj",
             "pcd": false
         },
         {
@@ -303,8 +319,9 @@ const vagas =
             "salary": "R$ 4.000,00",
             "contact_email": "vagas@clinicreabilitar.com",
             "job_area": "saude",
-            "job_model": "CLT",
+            "job_model": "hibrido",
             "publication_date": "2024-06-17",
+            "contract":"pj",
             "pcd": false
         },
         {
@@ -320,9 +337,10 @@ const vagas =
             ],
             "salary": "R$ 8.500,00",
             "contact_email": "vagas@construtoramoderna.com",
-            "job_area": "technology",
-            "job_model": "CLT",
+            "job_area": "tecnologia",
+            "job_model": "presencial",
             "publication_date": "2024-06-18",
+            "contract":"estagio",
             "pcd": false
         },
         {
@@ -338,9 +356,10 @@ const vagas =
             ],
             "salary": "R$ 6.500,00",
             "contact_email": "rh@datainsights.com",
-            "job_area": "technology",
-            "job_model": "CLT",
+            "job_area": "tecnologia",
+            "job_model": "presencial",
             "publication_date": "2024-06-19",
+            "contract":"estagio",
             "pcd": false
         },
         {
@@ -354,11 +373,12 @@ const vagas =
                 "Conhecimento em ERP",
                 "Habilidade em gestão de equipes"
             ],
-            "salary": "R$ 7.000,00",
+            "salary": "R$ 1.000,00",
             "contact_email": "vagas@transportefacil.com",
-            "job_area": "technology",
-            "job_model": "CLT",
+            "job_area": "tecnologia",
+            "job_model": "remoto",
             "publication_date": "2024-06-20",
+            "contract":"estagio",
             "pcd": false
         }
     ]
