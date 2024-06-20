@@ -1,3 +1,5 @@
+@import url(header.css);
+
 * {
     margin: 0;
     padding: 0;
@@ -10,209 +12,58 @@ body {
     height: 100vh;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #3572EF;
-    color: #fff;
-    padding: 10px;
-}
-
-a {
-    text-decoration: none;
-}
-
-header h1 {
-    margin: 0;
-}
-
-#logo {
-    display: flex;
-    align-items: center;
-}
-
-#logo img {
-    width: 55px;
-    height: 50px;
-}
-
-h1, h4 {
-    margin: 0;
-}
-
-#logo > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.cinza {
-    color: #2d2d2d;
-}
-
-nav {
-    width: 40%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-nav ul {
-    display: flex;
-    gap: 20px;
-    list-style-type: none;
-}
-
-nav li a {
-    text-decoration: none;
-    padding: 6px 15px;
-    color: #fff;
-    font-size: 0.9em;
-    font-weight: 400;
-}
-
-nav li a:hover {
-    background-color: #fff;
-    color: #3572EF;
-}
-
-.anuncio {
-    border: 2px solid #0000ff;
-    border-radius: 5px;
-}
-.anuncio:hover {
-    background-color: #050C9C;
-    color: #6b70cc;
-}
-
-.cadastro-cv {
-    border: 1px solid #c13535;
-    background-color: #ea6767;
-    border-radius: 5px;
-}
-.cadastro-cv:hover {
-    background-color: #C80036;
-    color: #ff9bb6;
-}
-
-.botao-menu {
-    border: none;
-    cursor: pointer;
-    color: white;
-    padding: 10px;
-    width: 110px;
-    background: url(/imagens/material-symbols-light--menu.png) no-repeat center right;
-    background-size: 30px;
-}
-
-.menu {
-    display: none;
-    width: 200px;
-    background-color: #444;
-    border-radius: 5px;
-    padding: 15px;
-    position: absolute;
-    right: 0;
-    margin-top: 5px;
-    margin-right: 10px;
-    box-shadow: 0 0 8px #000;
-}
-
-.menu ul {
-    list-style-type: none;
-    display: block;
-    position: relative;
-    left: 5px;
-}
-
-.menu li {
-    margin: 0.5rem 0;
-}
-
-.menu li a {
-    text-align: center;
-    display: block;
-    width: 160px;
-}
-/* Fim cabeçalho */
-
 main {
-    width: 55%;
-    margin: 0 auto;
-    padding: 20px 0;
-    text-align: left;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 h1 {
-    text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
-.curriculo-card {
-    width: 100%;
+.form-container {
+    width: 700px;
     background-color: #fff;
-    border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-form fieldset {
-    border: 1px solid #969292;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 20px;
+.form-group {
+    margin-bottom: 15px;
 }
-
-form legend {
-    font-weight: bold;
-    color: #615EFC;
-}
-
-form label {
+.form-group label {
     display: block;
     margin-bottom: 5px;
-    font-weight: bold;
+    color: #373A40;
+    font-weight: 600;
+    font-size: 0.9em;
 }
-
-form input[type="text"],
-form input[type="url"],
-form input[type="email"],
-form input[type="number"],
-form input[type="date"],
-form select,
-form textarea {
-    width: calc(100% - 22px);
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    font-size: 1.1em;
+    font-size: 0.9em;
+    box-sizing: border-box;
 }
-
-form textarea {
+.form-group textarea {
     resize: vertical;
 }
-
-form input[type="submit"] {
+.form-group button {
     width: 100%;
-    background-color: #3572EF;
-    color: white;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 1.1em;
+    font-size: 1em;
     border: none;
-    padding: 15px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
     border-radius: 5px;
+    cursor: pointer;
     transition: background 0.2s ease;
 }
-
-form input[type="submit"]:hover {
-    background-color: #1d51bb;
+.form-group button:hover {
+    background-color: #0056b3;
 }
 
 footer {

@@ -1,3 +1,5 @@
+@import url(header.css);
+
 * {
     padding: 0;
     margin: 0;
@@ -7,50 +9,6 @@ body {
     font-family: Roboto, sans-serif;
     background-color: #f6f6f6;
 }
-
-/* Inicio cabeçalho */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #3572EF;
-    color: #fff;
-    padding: 10px;
-}
-
-a {
-    text-decoration: none;
-}
-
-header h1 {
-    margin: 0;
-}
-
-#logo {
-    display: flex;
-    align-items: center;
-}
-
-#logo img {
-    width: 55px;
-    height: 50px;
-}
-
-h1, h4 {
-    margin: 0;
-}
-
-#logo > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.cinza {
-    color: #2d2d2d;
-}
-/* Fim cabeçalho */
 
 main {
     display: flex;
