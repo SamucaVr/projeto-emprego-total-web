@@ -42,11 +42,11 @@
                         <ul>
                             <li><a href="index.html">Home</a></li>
                             <li><a href="#">Buscar Empregos</a></li>
-                            <li><a href="/html/anuncio-empresa.html">Anunciar vaga</a></li>
-                            <li><a href="/html/cad-curriculo.html">Cadastrar CV</a></li>
+                            <li><a class="link-logado" href="/html/anuncio-empresa.html">Anunciar vaga</a></li>
+                            <li><a class="link-logado" href="/html/cad-curriculo.html">Cadastrar CV</a></li>
                             <li><a href="/html/cursos.html">Cursos</a></li>
                             <li><a href="#">Currículo</a></li>
-                            <li><a href="#">Sobre Nós</a></li>
+                            <li><a href="/html/sobre-nos-page.html">Sobre Nós</a></li>
                         </ul>
                     </div>
                 </div>
@@ -62,7 +62,7 @@
             <button onclick="mostrarMenuUsuario()" class="botao-menu-usuario">Perfil</button>
             <div class="menu-usuario" id="menu-usuario">
                 <ul>
-                    <li><a href="#">Dados pessoais</a></li>
+                    <li><a href="/html/dados-pessoais.html">Dados pessoais</a></li>
                     <li><a href="#">Cancelar assinatura</a></li>
                     <li><a href="#">Cadastro e assinatura</a></li>
                     <li><a href="#" id="sair">Sair</a></li>
@@ -73,52 +73,59 @@
 
     <main>
         <div class="filters">
-            <select>
+            <select id="profissional">
                 <option value="" hidden>Área profissional</option>
-                <option value="Tecnologia">Tecnologia</option>
-                <option value="Saúde">Saúde</option>
-                <option value="Educação">Educação</option>
+                <option value="tecnologia">Tecnologia</option>
+                <option value="saude">Saúde</option>
+                <option value="educacao">Educação</option>
             </select>
-            <select>
+            <select id="modelo">
                 <option value="" hidden>Modelo de trabalho</option>
-                <option value="Presencial">Presencial</option>
-                <option value="Remoto">Remoto</option>
-                <option value="Híbrido">Híbrido</option>
+                <option value="presencial">Presencial</option>
+                <option value="remoto">Remoto</option>
+                <option value="hibrido">Híbrido</option>
             </select>
-            <select>
+            <select id="data">
                 <option value="" hidden>Data de publicação</option>
-                <option value="Última semana">Última semana</option>
-                <option value="Último mês">Último mês</option>
-                <option value="Todos">Todos</option>
+                <option value="semana">Última semana</option>
+                <option value="mes">Último mês</option>
+                <option value="todos">Todos</option>
             </select>
-            <select>
+            <select id="contrato">
                 <option value="" hidden>Tipo de contrato</option>
-                <option value="CLT">CLT</option>
-                <option value="PJ">PJ</option>
-                <option value="Estágio">Estágio</option>
+                <option value="clt">CLT</option>
+                <option value="pj">PJ</option>
+                <option value="estagio">Estágio</option>
             </select>
-            <select>
+            <select id="pcd">
                 <option value="" hidden>PCD</option>
-                <option value="Sim">Sim</option>
-                <option value="Não">Não</option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
             </select>
-            <select>
+            <select id="salario">
                 <option value="" hidden>Salário</option>
-                <option value="Até R$ 1.000">Até R$ 1.000</option>
-                <option value="R$ 1.000 - R$ 2.000">R$ 1.000 - R$ 2.000</option>
-                <option value="Acima de R$ 2.000">Acima de R$ 2.000</option>
+                <option value="mil">Até R$ 1.000</option>
+                <option value="miladois">R$ 1.000 - R$ 2.000</option>
+                <option value="acimadois">Acima de R$ 2.000</option>
             </select>
+            <select id="limparFiltros">
+                <option value="" hidden>Limpar Filtros</option>
+                <option value="limpar">Limpar</option>
+            </select>
+
         </div>
+        
         <div id="jobs-container"></div>
         <div id="pagination-container" class="pagination"></div>
+
     </main>
 
     <footer>
         <p>Copyright &copy; 2024, Emprego Total; Todos os direitos reservados.</p>
     </footer>
 
-    <script src="./js/script.js"></script>
-    <script type="module" src="/js/module.js"></script>
+    <script src="/js/script.js"></script>
+    <script type="module" src="/js/filtros.js"></script>
 </body>
 
 </html>
