@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emprego Total - O seu portal de oportunidades</title>
+    <link rel="icon" href="/imagens/logo-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/dados-pessoais.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="logo">
+            <a href="/index.html">
+                <img src="/imagens/logo.png" alt="Logo do Emprego Total">
+            </a>
+            <div>
+                <h1>Emprego <span class="cinza">Total</span></h1>
+                <h4>O seu portal de oportunidades</h4>
+            </div>
+        </div>
+        <nav>
+            <div id="area-menu">
+                <ul>
+                    <li><a href="/html/anuncio-empresa.html" class="anuncio">Anunciar vaga</a></li>
+                    <li><a href="/html/cad-curriculo.html" class="cadastro-cv">Cadastrar CV</a></li>
+                    <li id="login-button"><a href="/html/login-page.html">Entrar</a></li>
+                </ul>
+            </div>
+
+            <div id="btn-area">
+                <div>
+                    <button onclick="mostrarMenu()" class="botao-menu">Menu</button>
+                    <div class="menu" id="menu">
+                        <ul>
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="#">Buscar Empregos</a></li>
+                            <li><a class="link-logado" href="/html/anuncio-empresa.html">Anunciar vaga</a></li>
+                            <li><a class="link-logado" href="/html/cad-curriculo.html">Cadastrar CV</a></li>
+                            <li><a href="/html/cursos.html">Cursos</a></li>
+                            <li><a href="#">Currículo</a></li>
+                            <li><a href="/html/sobre-nos-page.html">Sobre Nós</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="user-area">
+            <h1>Dados pessoais</h1>
+            <form action="#">
+                <div class="form">
+                    <label for="">Nome completo</label>
+                    <input type="text" id="nome-completo" name="nomeCompleto" placeholder="EX.: João Silva">
+                </div>
+
+                <div class="form">
+                    <label for="">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="EX.: email@email.com.br">
+                </div>
+
+                <div class="form">
+                    <label for="">Telefone</label>
+                    <input type="number" name="telefone" id="telefone" placeholder="EX.: (11) 98888-8888">
+                </div>
+
+                <div class="form">
+                    <label for="">CEP</label>
+                    <input type="text" name="cep" id="cep" placeholder="EX.: 00000-000">
+                </div>
+
+                <div class="form">
+                    <label for="">Logradouro</label>
+                    <input type="text" name="logradouro" id="logradouro" placeholder="EX.: Avenida Ipiranga">
+                </div>
+
+                <div class="form">
+                    <label for="">Cidade</label>
+                    <input type="text" name="cidade" id="cidade" placeholder="EX.: São Paulo - SP">
+                </div>
+
+                <div class="endereco-area">
+                    <div class="endereco">
+                        <label for="">Bairro</label>
+                        <input type="text" name="bairro" id="bairro" placeholder="EX.: Jardim Paulista">
+                    </div>
+                    <div class="endereco">
+                        <label for="">Número</label>
+                        <input type="number" name="numero" id="numero" placeholder="EX.: 200">
+                    </div>
+                </div>
+
+                <div class="form">
+                    <label for="">Complemento</label>
+                    <input type="text" name="complemento" id="complemento" placeholder="EX.: Apto">
+                </div>
+
+                <div class="form">
+                    <label for="">Data de nascimento</label>
+                    <input type="date" name="" id="data">
+                </div>
+
+                <div class="lista-radio">
+                    <div class="radio">
+                        <input type="radio" name="genero" id="masculino" value="m">
+                        <label for="masculino">Masculino</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="genero" id="feminino" value="f">
+                        <label for="feminino">Feminino</label>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <input type="submit" value="Salvar">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2024, Emprego Total; Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
