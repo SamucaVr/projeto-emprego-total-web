@@ -67,6 +67,12 @@ let divUsuarioLogado = document.querySelector('#usuarioLogado');
 let textoUsuarioLogado = document.querySelector('#emailLogado');
 let loginButton = document.querySelector('#area-menu');
 let areaPesquisa = document.querySelector('.area-pesquisa');
+let linksLogado = document.querySelectorAll('.link-logado');
+
+linksLogado.forEach(link => {
+    link.style.display = 'none';
+});
+
 divUsuarioLogado.style.display = 'none';
 
 let usuarioLocalStorage = localStorage.getItem('usuarioLogado');
@@ -75,6 +81,11 @@ let emailUsuarioLogado = JSON.parse(usuarioLocalStorage);
 if (usuarioLocalStorage) {
     divUsuarioLogado.style.display = 'flex';
     textoUsuarioLogado.innerHTML = emailUsuarioLogado.email;
+    
+    linksLogado.forEach(link => {
+        link.style.display = 'block';
+    });
+
     loginButton.style.display = 'none';
 } else {
     areaPesquisa.style.display = 'none';
